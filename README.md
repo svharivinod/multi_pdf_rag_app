@@ -4,6 +4,9 @@ CiteRAG is a **Multi-PDF Retrieval-Augmented Generation (RAG) application** that
 
 The system ensures that answers are generated **only from the uploaded documents**, making it suitable for use cases that require **accuracy, traceability, and trust**.
 
+<img width="1860" height="825" alt="CiteRAG" src="https://github.com/user-attachments/assets/b51c3dba-4cb0-4a53-b067-833eebe447f5" />
+
+
 ---
 
 ## 🚀 Key Features
@@ -191,6 +194,7 @@ Built as part of a hands-on learning exercise to deeply understand Retrieval-Aug
 ## ⭐ If you like this project
 
 Feel free to ⭐ the repository or fork it for experimentation.
+
 
 
 
