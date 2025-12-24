@@ -54,6 +54,33 @@ LLM (ChatOpenAI)
 ▼
 Answer + Page-Level Citations
 
+Flowchart TD
+    
+    U[User] -->|Upload PDFs| UI[Streamlit UI]
+
+    UI -->|PDF Files| L[PDF Loader<br/>(PyPDFLoader)]
+    L --> M[Page-wise Documents<br/>+ Metadata]
+
+    M --> C[Text Chunking<br/>(RecursiveCharacterTextSplitter)]
+    C --> CH[Text Chunks<br/>+ chunk_id]
+
+    CH --> E[Embeddings<br/>(OpenAI text-embedding-3-small)]
+    E --> V[FAISS Vector Store]
+
+    V -->|Top-K Similarity Search| R[Relevant Chunks]
+
+    UI -->|User Question| QE[Query Embedding]
+    QE --> V
+
+    R --> P[Prompt Assembly<br/>(Context + Question)]
+    P --> LLM[ChatOpenAI]
+
+    LLM --> A[Answer]
+    A --> CIT[Citations<br/>(PDF + Page No.)]
+
+    CIT --> UI
+
+
 
 ## 🧩 Core RAG Pipeline (`rag_pipeline.py`)
 
@@ -194,6 +221,7 @@ Built as part of a hands-on learning exercise to deeply understand Retrieval-Aug
 ## ⭐ If you like this project
 
 Feel free to ⭐ the repository or fork it for experimentation.
+
 
 
 
