@@ -86,6 +86,9 @@ Flowchart TD
 
 The project follows a clean, modular RAG pipeline:
 
+<img width="4439" height="2574" alt="Untitled-2025-12-24-2147_1 excalidraw" src="https://github.com/user-attachments/assets/04fb7788-4512-4482-84a6-1f56a6d458aa" />
+
+
 ### 1️⃣ PDF Loading
 - Each PDF is loaded page-by-page
 - Metadata added:
@@ -221,6 +224,7 @@ Built as part of a hands-on learning exercise to deeply understand Retrieval-Aug
 ## ⭐ If you like this project
 
 Feel free to ⭐ the repository or fork it for experimentation.
+
 
 
 
